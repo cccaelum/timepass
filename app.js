@@ -5,6 +5,7 @@ const app = express();
 const indexRouter = require('./routes/index');
 const endrouteRouter = require('./routes/endroute');
 
+//app.use(horaMiddleware) para que cualquier ruta tenga acceso a la hora, por lo tanto no hace falta pasarlo individualmente en las rutas
 app.use('/', indexRouter);
 app.use('/endroute', endrouteRouter);
 
